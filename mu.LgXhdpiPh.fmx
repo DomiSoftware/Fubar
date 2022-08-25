@@ -1,0 +1,991 @@
+inherited frmMain_LgXhdpiPh: TfrmMain_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited ScaledLayout1: TScaledLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+  end
+  inherited tcBook: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    Sizes = (
+      450s
+      646s
+      450s
+      646s
+      450s
+      646s
+      450s
+      646s)
+    inherited tsBookP3: TTabItem
+      Size.Width = 112.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited pnlCalendar: TPanel
+        Size.Width = 450.000000000000000000
+        inherited pnlMonth: TPanel
+          inherited DomiNewCal: TPanel
+            inherited nCal: TGridPanelLayout
+              inherited cpd0: TPanel
+                inherited lbd0: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpd4: TPanel
+                inherited lbd4: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpd5: TPanel
+                inherited lbd5: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpd6: TPanel
+                inherited lbd6: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpd1: TPanel
+                inherited lbd1: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpd2: TPanel
+                inherited lbd2: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpd3: TPanel
+                inherited lbd3: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv0x0: TPanel
+                inherited lbv0x0: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv0x1: TPanel
+                inherited lbv0x1: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv0x2: TPanel
+                inherited lbv0x2: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv0x3: TPanel
+                inherited lbv0x3: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv0x4: TPanel
+                inherited lbv0x4: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv0x5: TPanel
+                inherited lbv0x5: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv0x6: TPanel
+                inherited lbv0x6: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv1x0: TPanel
+                inherited lbv1x0: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv1x1: TPanel
+                inherited lbv1x1: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv1x2: TPanel
+                inherited lbv1x2: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv1x3: TPanel
+                inherited lbv1x3: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv1x4: TPanel
+                inherited lbv1x4: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv1x5: TPanel
+                inherited lbv1x5: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv1x6: TPanel
+                inherited lbv1x6: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv2x0: TPanel
+                inherited lbv2x0: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv2x1: TPanel
+                inherited lbv2x1: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv2x2: TPanel
+                inherited lbv2x2: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv2x3: TPanel
+                inherited lbv2x3: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv2x4: TPanel
+                inherited lbv2x4: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv2x5: TPanel
+                inherited lbv2x5: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv2x6: TPanel
+                inherited lbv2x6: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv3x0: TPanel
+                inherited lbv3x0: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv3x1: TPanel
+                inherited lbv3x1: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv3x2: TPanel
+                inherited lbv3x2: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv3x3: TPanel
+                inherited lbv3x3: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv3x4: TPanel
+                inherited lbv3x4: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv3x5: TPanel
+                inherited lbv3x5: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv3x6: TPanel
+                inherited lbv3x6: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv4x0: TPanel
+                inherited lbv4x0: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv4x1: TPanel
+                inherited lbv4x1: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv4x2: TPanel
+                inherited lbv4x2: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv4x3: TPanel
+                inherited lbv4x3: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv4x4: TPanel
+                inherited lbv4x4: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv4x5: TPanel
+                inherited lbv4x5: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv4x6: TPanel
+                inherited lbv4x6: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv5x0: TPanel
+                inherited lbv5x0: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv5x1: TPanel
+                inherited lbv5x1: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv5x2: TPanel
+                inherited lbv5x2: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv5x3: TPanel
+                inherited lbv5x3: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv5x4: TPanel
+                inherited lbv5x4: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv5x5: TPanel
+                inherited lbv5x5: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited cpv5x6: TPanel
+                inherited lbv5x6: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+            end
+            inherited nCalHeader: TPanel
+              inherited cpnM: TPanel
+                inherited lbnM: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+            end
+          end
+        end
+        inherited pnlDay: TPanel
+          Position.X = 278.000000000000000000
+          inherited lblCalFlagNum: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited lblCalFlagDay: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited lblCalFlagMth: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited lblCalFlagYear: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+      end
+      inherited StatusBar1: TStatusBar
+        Position.Y = 616.000000000000000000
+        Size.Width = 450.000000000000000000
+        inherited btnDayTextSave: TButton
+          Position.X = 350.000000000000000000
+        end
+      end
+      inherited Memo1: TMemo
+        Size.Width = 444.000000000000000000
+        Size.Height = 449.000000000000000000
+        Viewport.Width = 444.000000000000000000
+        Viewport.Height = 449.000000000000000000
+      end
+    end
+    inherited tsBookP2: TTabItem
+      Size.Width = 112.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited tbHead: TLabel
+        Size.Width = 450.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited btnMatrix: TPanel
+        Size.Width = 450.000000000000000000
+        inherited gpTimerSet: TGridPanelLayout
+          Size.Width = 450.000000000000000000
+          inherited tb180: TButton
+            Size.Width = 155.105667114257800000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb150: TButton
+            Size.Width = 151.067855834960900000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb120: TButton
+            Size.Width = 143.826477050781300000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb90: TButton
+            Size.Width = 155.105667114257800000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb75: TButton
+            Size.Width = 151.067855834960900000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb60: TButton
+            Size.Width = 143.826477050781300000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb45: TButton
+            Size.Width = 155.105667114257800000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb30: TButton
+            Size.Width = 151.067855834960900000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb25: TButton
+            Size.Width = 143.826477050781300000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb20: TButton
+            Size.Width = 155.105667114257800000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb15: TButton
+            Size.Width = 151.067855834960900000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb10: TButton
+            Size.Width = 143.826477050781300000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb05: TButton
+            Size.Width = 155.105667114257800000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb03: TButton
+            Size.Width = 151.067855834960900000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb01: TButton
+            Size.Width = 143.826477050781300000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb10s: TButton
+            Size.Width = 143.826477050781300000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb20s: TButton
+            Size.Width = 151.067855834960900000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited tb30s: TButton
+            Size.Width = 155.105667114257800000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+      end
+      inherited tmr_go: TButton
+        Size.Width = 430.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited tbTime: TLabel
+        Size.Width = 450.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited tsBookP1: TTabItem
+      Size.Width = 112.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited tcProj: TTabControl
+        Size.Width = 450.000000000000000000
+        Size.Height = 646.000000000000000000
+        Sizes = (
+          450s
+          597s
+          450s
+          597s
+          450s
+          597s
+          450s
+          597s
+          450s
+          597s)
+        inherited tsOProj: TTabItem
+          Size.Width = 90.000000000000000000
+          ExplicitSize.cx = 75.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited pnlPIView: TPanel
+            Size.Width = 450.000000000000000000
+            inherited ebProject: TEdit
+              Size.Width = 440.000000000000000000
+            end
+            inherited ebModule: TEdit
+              Size.Width = 440.000000000000000000
+            end
+            inherited ebSubject: TEdit
+              Size.Width = 440.000000000000000000
+            end
+            inherited Panel13: TPanel
+              Size.Width = 440.000000000000000000
+              inherited bPISave: TButton
+                Position.X = 391.000000000000000000
+              end
+              inherited bPIDel: TButton
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited lblPICount: TLabel
+                Size.Width = 177.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+            inherited lbPIHead: TLabel
+              Size.Width = 450.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+        end
+        inherited tsCIView: TTabItem
+          Size.Width = 90.000000000000000000
+          ExplicitSize.cx = 125.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited pnlPICIOverview: TPanel
+            Size.Width = 450.000000000000000000
+            Size.Height = 597.000000000000000000
+            inherited pnlCRQuote: TPanel
+              Size.Width = 450.000000000000000000
+              Size.Height = 306.000000000000000000
+              inherited lblQuoteHead: TLabel
+                Size.Width = 450.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited mCRQuote: TMemo
+                Size.Width = 430.000000000000000000
+                Size.Height = 258.000000000000000000
+                Viewport.Width = 430.000000000000000000
+                Viewport.Height = 258.000000000000000000
+              end
+            end
+            inherited pnlCIRef: TPanel
+              Size.Width = 450.000000000000000000
+              inherited lbCIHeader: TLabel
+                Size.Width = 450.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited mCILong: TMemo
+                Size.Width = 430.000000000000000000
+                Viewport.Width = 430.000000000000000000
+                Viewport.Height = 70.000000000000000000
+              end
+              inherited cbBibliogOnly: TCheckBox
+                Size.Width = 430.000000000000000000
+              end
+              inherited CIR_ILR1: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited lbCI1: TLabel
+                Size.Width = 430.000000000000000000
+              end
+              inherited Panel3: TPanel
+                Size.Width = 444.000000000000000000
+                inherited bCISave: TButton
+                  Position.X = 395.000000000000000000
+                end
+                inherited bCIDel: TButton
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+                inherited lbCICount: TLabel
+                  Size.Width = 130.000000000000000000
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+                inherited bCINew: TButton
+                  Position.X = 344.000000000000000000
+                end
+              end
+            end
+            inherited bCIOutput: TButton
+              Position.Y = 563.000000000000000000
+              Size.Width = 440.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+        end
+        inherited Outliner: TTabItem
+          Size.Width = 90.000000000000000000
+          ExplicitSize.cx = 50.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited Panel1: TPanel
+            Size.Width = 450.000000000000000000
+            Size.Height = 597.000000000000000000
+            inherited myTV: TTreeView
+              Size.Width = 440.000000000000000000
+              Viewport.Width = 440.000000000000000000
+              Viewport.Height = 150.000000000000000000
+            end
+            inherited Panel4: TPanel
+              Size.Width = 450.000000000000000000
+              Size.Height = 256.000000000000000000
+              inherited mShow: TMemo
+                Size.Width = 440.000000000000000000
+                Size.Height = 251.000000000000000000
+                Viewport.Width = 440.000000000000000000
+                Viewport.Height = 251.000000000000000000
+              end
+            end
+            inherited Panel5: TPanel
+              Size.Width = 440.000000000000000000
+              inherited GridPanelLayout2: TGridPanelLayout
+                Size.Width = 440.000000000000000000
+                inherited btLoad: TButton
+                  Size.Width = 109.922813415527300000
+                end
+                inherited btSave: TButton
+                  Size.Width = 91.538787841796880000
+                end
+                inherited btOutp: TButton
+                  Size.Width = 96.373245239257810000
+                end
+                inherited btNew: TButton
+                  Size.Width = 102.165184020996100000
+                end
+              end
+              inherited eNodeLabel: TEdit
+                Size.Width = 440.000000000000000000
+              end
+              inherited gpNode: TGridPanelLayout
+                Size.Width = 440.000000000000000000
+                inherited btnAddNode: TButton
+                  Size.Width = 210.000000000000000000
+                end
+                inherited btnDelNode: TButton
+                  Size.Width = 210.000000000000000000
+                end
+                inherited btnAddSubNode: TButton
+                  Size.Width = 210.000000000000000000
+                end
+                inherited btnMoveNode: TButton
+                  Size.Width = 210.000000000000000000
+                end
+                inherited btnMoveNodetoRoot: TButton
+                  Size.Width = 210.000000000000000000
+                end
+                inherited btnStorySaveFront: TButton
+                  Size.Width = 210.000000000000000000
+                end
+              end
+            end
+            inherited eOutlineTitle: TEdit
+              Size.Width = 440.000000000000000000
+            end
+          end
+        end
+        inherited tsCRChooseType: TTabItem
+          Size.Width = 90.000000000000000000
+          ExplicitSize.cx = 125.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited pnlCIChooseType: TPanel
+            Size.Width = 450.000000000000000000
+            Size.Height = 597.000000000000000000
+            inherited Apply: TButton
+              Position.Y = 556.000000000000000000
+              Size.Width = 430.000000000000000000
+            end
+            inherited tcCiteType: TTabControl
+              Size.Width = 450.000000000000000000
+              Size.Height = 551.000000000000000000
+              Sizes = (
+                450s
+                502s
+                450s
+                502s
+                450s
+                502s)
+              inherited tsBookJournal: TTabItem
+                Size.Width = 106.000000000000000000
+                ExplicitSize.cx = 95.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+                inherited GroupBox1: TGroupBox
+                  Size.Width = 430.000000000000000000
+                  Size.Height = 487.000000000000000000
+                  inherited rgBookAuth: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgBookOrgAuth: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgBookReprint: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgBookNoAuth: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgBookFacsimile: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgBookChap: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgBookCollected: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgAnthology: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgAnthologyLine: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgReference: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgBible: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgJournalArt: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgJournalWhole: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgBookPartChap: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                end
+              end
+              inherited tsNewsMedia: TTabItem
+                Size.Width = 83.000000000000000000
+                ExplicitSize.cx = 87.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+                inherited GroupBox2: TGroupBox
+                  Size.Width = 430.000000000000000000
+                  Size.Height = 492.000000000000000000
+                  inherited rgWebAuth: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgWebNoAuth: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgWebOrg: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgMovies: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgPodcast: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgRadio: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgSocialMedia: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgTVEpisodeSeries: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgTVSingle: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgNewsByline: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgNewsNoByline: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgWebMagNoPrint: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                end
+              end
+              inherited tsVLE: TTabItem
+                Size.Width = 63.000000000000000000
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+                inherited GroupBox3: TGroupBox
+                  Size.Width = 430.000000000000000000
+                  Size.Height = 492.000000000000000000
+                  inherited rgConfPaper: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgVLELectureNotes: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgVLEModule: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgVLETutorHandout: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgPainting: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgPhotographicPrint: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                  inherited rgPhotographWeb: TRadioButton
+                    Size.Width = 405.000000000000000000
+                  end
+                end
+              end
+            end
+          end
+        end
+        inherited tsCREntry: TTabItem
+          Size.Width = 90.000000000000000000
+          ExplicitSize.cx = 127.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited pnlCREntry: TPanel
+            Size.Width = 450.000000000000000000
+            Size.Height = 597.000000000000000000
+            inherited pnlCROptions: TPanel
+              Size.Width = 440.000000000000000000
+              inherited lblCRHead: TLabel
+                Size.Width = 440.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited eb01: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited eb02: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited eb03: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited eb04: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited eb08: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited eb09: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited eb10: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited eb11: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited EBOL02: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited eb06: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited eb05: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited eb07: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited EBOL01: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited EBOL03: TEdit
+                Size.Width = 430.000000000000000000
+              end
+              inherited bCRAccessed: TButton
+                Size.Width = 430.000000000000000000
+              end
+              inherited lblCROnline: TLabel
+                Size.Width = 440.000000000000000000
+              end
+            end
+            inherited bCRMake: TButton
+              Position.Y = 558.000000000000000000
+              Size.Width = 440.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited bCRReset: TButton
+              Position.Y = 505.000000000000000000
+              Size.Width = 430.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+        end
+      end
+    end
+    inherited tsConfig: TTabItem
+      Size.Width = 114.000000000000000000
+      ExplicitSize.cx = 94.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited Panel2: TPanel
+        Size.Width = 450.000000000000000000
+        inherited btnDBRestore: TButton
+          Position.X = 299.000000000000000000
+        end
+        inherited Label1: TLabel
+          Size.Width = 450.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited Label14: TLabel
+          Size.Width = 450.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      inherited Panel6: TPanel
+        Size.Width = 450.000000000000000000
+        inherited TrackBar1: TTrackBar
+          Size.Height = 32.000000000000000000
+        end
+        inherited Label2: TLabel
+          Position.X = 401.000000000000000000
+        end
+        inherited Label3: TLabel
+          Size.Width = 450.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      inherited Panel7: TPanel
+        Size.Width = 450.000000000000000000
+        inherited Label4: TLabel
+          Size.Width = 450.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited OutMemAutoSave: TSwitch
+          Position.X = 195.000000000000000000
+          Position.Y = 26.000000000000000000
+        end
+        inherited Label6: TLabel
+          Position.X = 153.000000000000000000
+          Position.Y = 29.000000000000000000
+        end
+        inherited Label7: TLabel
+          Position.X = 255.000000000000000000
+        end
+      end
+      inherited Panel8: TPanel
+        Size.Width = 450.000000000000000000
+        inherited Label5: TLabel
+          Size.Width = 450.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited Panel9: TPanel
+          Size.Width = 450.000000000000000000
+          inherited Label9: TLabel
+            Size.Width = 450.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited GridPanelLayout1: TGridPanelLayout
+            Size.Width = 410.000000000000000000
+            inherited cbCFGprCreate: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+            inherited cbCFGprDelete: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+            inherited cbCFGprChange: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+          end
+        end
+        inherited Panel10: TPanel
+          Size.Width = 450.000000000000000000
+          inherited GridPanelLayout3: TGridPanelLayout
+            Size.Width = 410.000000000000000000
+            inherited cbCFGtiStart: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+            inherited cbCFGtiEnd: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+            inherited cbCFGtiPause: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+          end
+          inherited Label10: TLabel
+            Size.Width = 450.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited Panel11: TPanel
+          Size.Width = 450.000000000000000000
+          inherited V: TGridPanelLayout
+            Size.Width = 410.000000000000000000
+            inherited cbCFGouNewNode: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+            inherited cbCFGouMovedNode: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+            inherited cbCFGouNewSubNode: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+            inherited cbCFGouDeletedNode: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+            inherited cbCFGouExport: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+            inherited cbCFGouHousekeep: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+          end
+          inherited Label8: TLabel
+            Size.Width = 450.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited Panel12: TPanel
+          Size.Width = 450.000000000000000000
+          inherited GridPanelLayout5: TGridPanelLayout
+            Size.Width = 410.000000000000000000
+            inherited cbCFGciCreate: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+            inherited cbCFGciUpdates: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+            inherited cbCFGciDeleted: TCheckBox
+              Size.Width = 205.000000000000000000
+            end
+          end
+          inherited Label11: TLabel
+            Size.Width = 450.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+      end
+      inherited Panel14: TPanel
+        Size.Width = 450.000000000000000000
+        inherited Label12: TLabel
+          Size.Width = 450.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited TrackBar2: TTrackBar
+          Size.Height = 32.000000000000000000
+        end
+        inherited Label13: TLabel
+          Position.X = 401.000000000000000000
+        end
+      end
+    end
+  end
+  inherited GestMgr: TGestureManager
+    GestureData = <
+      item
+        Control = Owner
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end>
+      end>
+  end
+end

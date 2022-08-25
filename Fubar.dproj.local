@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/08/16 20:36:16.000.739,D:\Domisoft\Delphi 11.0 Academic\Fubar\TabbedApplication.dproj=D:\Domisoft\Delphi 11.0 Academic\Fubar\Fubar.dproj</Transaction>
+    <Transaction>2022/08/16 20:45:26.000.922,D:\Domisoft\Delphi 11.0 Academic\Fubar\TabbedTemplate.pas=D:\Domisoft\Delphi 11.0 Academic\Fubar\mu.pas</Transaction>
+    <Transaction>2022/08/16 20:45:26.000.922,D:\Domisoft\Delphi 11.0 Academic\Fubar\TabbedTemplate.fmx=D:\Domisoft\Delphi 11.0 Academic\Fubar\mu.fmx</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F90A89E7-37D7-442B-BCEF-701066EBD3A1}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Fubar.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Fubar">
+        <MSBuild Projects="Fubar.dproj"/>
+    </Target>
+    <Target Name="Fubar:Clean">
+        <MSBuild Projects="Fubar.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Fubar:Make">
+        <MSBuild Projects="Fubar.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Fubar"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Fubar:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Fubar:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

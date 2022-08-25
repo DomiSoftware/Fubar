@@ -1,0 +1,4736 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'TabbedForm'
+  ClientHeight = 800
+  ClientWidth = 376
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnResize = FormResize
+  DesignerMasterStyle = 0
+  object MediaP: TMediaPlayer
+    Left = 244
+    Top = 150
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 202
+    Top = 150
+  end
+  object ScaledLayout1: TScaledLayout
+    Align = Client
+    Enabled = False
+    OriginalWidth = 376.000000000000000000
+    OriginalHeight = 800.000000000000000000
+    Size.Width = 376.000000000000000000
+    Size.Height = 800.000000000000000000
+    Size.PlatformDefault = False
+    object HeaderToolBar: TToolBar
+      Anchors = []
+      Size.Width = 404.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Visible = False
+      object ToolBarLabel: TLabel
+        Align = Contents
+        Size.Width = 404.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'Title'
+      end
+    end
+  end
+  object Timer2: TTimer
+    Interval = 180000
+    OnTimer = Timer2Timer
+    Left = 340
+    Top = 148
+  end
+  object tcBook: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 376.000000000000000000
+    Size.Height = 800.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 3
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      376s
+      751s
+      376s
+      751s
+      376s
+      751s
+      376s
+      751s)
+    object tsBookP3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 93.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemrecent'
+      TabOrder = 0
+      Text = 'Journal'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object pnlCalendar: TPanel
+        Align = Top
+        Size.Width = 376.000000000000000000
+        Size.Height = 161.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object pnlMonth: TPanel
+          Align = Left
+          Locked = True
+          Margins.Left = 15.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 15.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 165.000000000000000000
+          Size.Height = 151.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'grouppanel'
+          TabOrder = 1
+          object DomiNewCal: TPanel
+            Align = Center
+            Size.Width = 154.000000000000000000
+            Size.Height = 140.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object nCal: TGridPanelLayout
+              Align = Top
+              HitTest = False
+              Margins.Top = 5.000000000000000000
+              Position.Y = 30.000000000000000000
+              Size.Width = 154.000000000000000000
+              Size.Height = 110.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              ColumnCollection = <
+                item
+                  SizeStyle = Absolute
+                  Value = 22.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 22.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 22.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 22.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 22.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 22.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 22.000000000000000000
+                end>
+              ControlCollection = <
+                item
+                  Column = 0
+                  Control = cpd0
+                  Row = 0
+                end
+                item
+                  Column = 4
+                  Control = cpd4
+                  Row = 0
+                end
+                item
+                  Column = 5
+                  Control = cpd5
+                  Row = 0
+                end
+                item
+                  Column = 6
+                  Control = cpd6
+                  Row = 0
+                end
+                item
+                  Column = 1
+                  Control = cpd1
+                  Row = 0
+                end
+                item
+                  Column = 2
+                  Control = cpd2
+                  Row = 0
+                end
+                item
+                  Column = 3
+                  Control = cpd3
+                  Row = 0
+                end
+                item
+                  Column = 0
+                  Control = cpv0x0
+                  Row = 1
+                end
+                item
+                  Column = 1
+                  Control = cpv0x1
+                  Row = 1
+                end
+                item
+                  Column = 2
+                  Control = cpv0x2
+                  Row = 1
+                end
+                item
+                  Column = 3
+                  Control = cpv0x3
+                  Row = 1
+                end
+                item
+                  Column = 4
+                  Control = cpv0x4
+                  Row = 1
+                end
+                item
+                  Column = 5
+                  Control = cpv0x5
+                  Row = 1
+                end
+                item
+                  Column = 6
+                  Control = cpv0x6
+                  Row = 1
+                end
+                item
+                  Column = 0
+                  Control = cpv1x0
+                  Row = 2
+                end
+                item
+                  Column = 1
+                  Control = cpv1x1
+                  Row = 2
+                end
+                item
+                  Column = 2
+                  Control = cpv1x2
+                  Row = 2
+                end
+                item
+                  Column = 3
+                  Control = cpv1x3
+                  Row = 2
+                end
+                item
+                  Column = 4
+                  Control = cpv1x4
+                  Row = 2
+                end
+                item
+                  Column = 5
+                  Control = cpv1x5
+                  Row = 2
+                end
+                item
+                  Column = 6
+                  Control = cpv1x6
+                  Row = 2
+                end
+                item
+                  Column = 0
+                  Control = cpv2x0
+                  Row = 3
+                end
+                item
+                  Column = 1
+                  Control = cpv2x1
+                  Row = 3
+                end
+                item
+                  Column = 2
+                  Control = cpv2x2
+                  Row = 3
+                end
+                item
+                  Column = 3
+                  Control = cpv2x3
+                  Row = 3
+                end
+                item
+                  Column = 4
+                  Control = cpv2x4
+                  Row = 3
+                end
+                item
+                  Column = 5
+                  Control = cpv2x5
+                  Row = 3
+                end
+                item
+                  Column = 6
+                  Control = cpv2x6
+                  Row = 3
+                end
+                item
+                  Column = 0
+                  Control = cpv3x0
+                  Row = 4
+                end
+                item
+                  Column = 1
+                  Control = cpv3x1
+                  Row = 4
+                end
+                item
+                  Column = 2
+                  Control = cpv3x2
+                  Row = 4
+                end
+                item
+                  Column = 3
+                  Control = cpv3x3
+                  Row = 4
+                end
+                item
+                  Column = 4
+                  Control = cpv3x4
+                  Row = 4
+                end
+                item
+                  Column = 5
+                  Control = cpv3x5
+                  Row = 4
+                end
+                item
+                  Column = 6
+                  Control = cpv3x6
+                  Row = 4
+                end
+                item
+                  Column = 0
+                  Control = cpv4x0
+                  Row = 5
+                end
+                item
+                  Column = 1
+                  Control = cpv4x1
+                  Row = 5
+                end
+                item
+                  Column = 2
+                  Control = cpv4x2
+                  Row = 5
+                end
+                item
+                  Column = 3
+                  Control = cpv4x3
+                  Row = 5
+                end
+                item
+                  Column = 4
+                  Control = cpv4x4
+                  Row = 5
+                end
+                item
+                  Column = 5
+                  Control = cpv4x5
+                  Row = 5
+                end
+                item
+                  Column = 6
+                  Control = cpv4x6
+                  Row = 5
+                end
+                item
+                  Column = 0
+                  Control = cpv5x0
+                  Row = 6
+                end
+                item
+                  Column = 1
+                  Control = cpv5x1
+                  Row = 6
+                end
+                item
+                  Column = 2
+                  Control = cpv5x2
+                  Row = 6
+                end
+                item
+                  Column = 3
+                  Control = cpv5x3
+                  Row = 6
+                end
+                item
+                  Column = 4
+                  Control = cpv5x4
+                  Row = 6
+                end
+                item
+                  Column = 5
+                  Control = cpv5x5
+                  Row = 6
+                end
+                item
+                  Column = 6
+                  Control = cpv5x6
+                  Row = 6
+                end>
+              ExpandStyle = FixedSize
+              RowCollection = <
+                item
+                  SizeStyle = Absolute
+                  Value = 20.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 15.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 15.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 15.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 15.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 15.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 15.000000000000000000
+                end>
+              object cpd0: TPanel
+                Align = Client
+                HitTest = False
+                Size.Width = 22.000000000000000000
+                Size.Height = 20.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 0
+                object lbd0: TLabel
+                  Align = Client
+                  StyledSettings = [Family]
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 20.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claMidnightblue
+                  TextSettings.HorzAlign = Center
+                  Text = 'Mo'
+                end
+              end
+              object cpd4: TPanel
+                Align = Client
+                HitTest = False
+                Size.Width = 22.000000000000000000
+                Size.Height = 20.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 4
+                object lbd4: TLabel
+                  Align = Client
+                  StyledSettings = [Family]
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 20.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claMidnightblue
+                  TextSettings.HorzAlign = Center
+                  Text = 'Fr'
+                end
+              end
+              object cpd5: TPanel
+                Align = Client
+                HitTest = False
+                Size.Width = 22.000000000000000000
+                Size.Height = 20.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 5
+                object lbd5: TLabel
+                  Align = Client
+                  StyledSettings = [Family]
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 20.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claMidnightblue
+                  TextSettings.HorzAlign = Center
+                  Text = 'Sa'
+                end
+              end
+              object cpd6: TPanel
+                Align = Client
+                HitTest = False
+                Size.Width = 22.000000000000000000
+                Size.Height = 20.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 6
+                object lbd6: TLabel
+                  Align = Client
+                  StyledSettings = [Family]
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 20.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claMidnightblue
+                  TextSettings.HorzAlign = Center
+                  Text = 'Su'
+                end
+              end
+              object cpd1: TPanel
+                Align = Client
+                HitTest = False
+                Size.Width = 22.000000000000000000
+                Size.Height = 20.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 1
+                object lbd1: TLabel
+                  Align = Client
+                  StyledSettings = [Family]
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 20.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claMidnightblue
+                  TextSettings.HorzAlign = Center
+                  Text = 'Tu'
+                end
+              end
+              object cpd2: TPanel
+                Align = Client
+                HitTest = False
+                Size.Width = 22.000000000000000000
+                Size.Height = 20.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 2
+                object lbd2: TLabel
+                  Align = Client
+                  StyledSettings = [Family]
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 20.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claMidnightblue
+                  TextSettings.HorzAlign = Center
+                  Text = 'We'
+                end
+              end
+              object cpd3: TPanel
+                Align = Client
+                HitTest = False
+                Size.Width = 22.000000000000000000
+                Size.Height = 20.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 3
+                object lbd3: TLabel
+                  Align = Client
+                  StyledSettings = [Family]
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 20.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claMidnightblue
+                  TextSettings.HorzAlign = Center
+                  Text = 'Th'
+                end
+              end
+              object cpv0x0: TPanel
+                Align = Client
+                HitTest = False
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 42
+                object lbv0x0: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv0x1: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 43
+                object lbv0x1: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv0x2: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 44
+                object lbv0x2: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv0x3: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 45
+                object lbv0x3: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv0x4: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 46
+                object lbv0x4: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv0x5: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 47
+                object lbv0x5: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv0x6: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 48
+                object lbv0x6: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv1x0: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 21
+                object lbv1x0: TLabel
+                  Align = Client
+                  AutoSize = True
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv1x1: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 22
+                object lbv1x1: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv1x2: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 23
+                object lbv1x2: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv1x3: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 24
+                object lbv1x3: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv1x4: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 25
+                object lbv1x4: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv1x5: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 26
+                object lbv1x5: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv1x6: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 27
+                object lbv1x6: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv2x0: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 35
+                object lbv2x0: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv2x1: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 36
+                object lbv2x1: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv2x2: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 37
+                object lbv2x2: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv2x3: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 38
+                object lbv2x3: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv2x4: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 39
+                object lbv2x4: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv2x5: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 40
+                object lbv2x5: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv2x6: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 41
+                object lbv2x6: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv3x0: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 14
+                object lbv3x0: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv3x1: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 15
+                object lbv3x1: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv3x2: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 16
+                object lbv3x2: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv3x3: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 17
+                object lbv3x3: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv3x4: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 18
+                object lbv3x4: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv3x5: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 19
+                object lbv3x5: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv3x6: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 20
+                object lbv3x6: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv4x0: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 28
+                object lbv4x0: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv4x1: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 29
+                object lbv4x1: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv4x2: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 30
+                object lbv4x2: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv4x3: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 31
+                object lbv4x3: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv4x4: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 32
+                object lbv4x4: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv4x5: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 33
+                object lbv4x5: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv4x6: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 34
+                object lbv4x6: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv5x0: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 7
+                object lbv5x0: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv5x1: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 8
+                object lbv5x1: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv5x2: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 9
+                object lbv5x2: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv5x3: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 10
+                object lbv5x3: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv5x4: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 11
+                object lbv5x4: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv5x5: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 12
+                object lbv5x5: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+              object cpv5x6: TPanel
+                Align = Client
+                Size.Width = 22.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'tooltippanel'
+                TabOrder = 13
+                object lbv5x6: TLabel
+                  Align = Client
+                  AutoTranslate = False
+                  EnableDragHighlight = False
+                  StyledSettings = [Family]
+                  HitTest = True
+                  Size.Width = 22.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claLightslategray
+                  TextSettings.HorzAlign = Center
+                  Text = '33'
+                  OnClick = lbv0x0Click
+                end
+              end
+            end
+            object nCalHeader: TPanel
+              Align = Top
+              Size.Width = 154.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object cpnLM: TPanel
+                Align = Left
+                Size.Width = 25.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 49
+                object lbnLM: TLabel
+                  Align = Left
+                  StyledSettings = [Family, Style]
+                  Size.Width = 25.000000000000000000
+                  Size.Height = 25.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Size = 9.000000000000000000
+                  TextSettings.FontColor = claNavy
+                  TextSettings.HorzAlign = Center
+                  Text = '<<'
+                end
+              end
+              object cpnNM: TPanel
+                Align = Right
+                Position.X = 129.000000000000000000
+                Size.Width = 25.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 50
+                object lbnNM: TLabel
+                  Align = Client
+                  StyledSettings = [Family, Style]
+                  Size.Width = 25.000000000000000000
+                  Size.Height = 25.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Size = 9.000000000000000000
+                  TextSettings.FontColor = claNavy
+                  TextSettings.HorzAlign = Center
+                  Text = '>>'
+                end
+              end
+              object cpnM: TPanel
+                Align = Client
+                Size.Width = 104.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 51
+                object lbnM: TLabel
+                  Align = Client
+                  StyledSettings = [Family, Size]
+                  HitTest = True
+                  Size.Width = 104.000000000000000000
+                  Size.Height = 25.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claMaroon
+                  TextSettings.HorzAlign = Center
+                  Text = 'MAR 2013'
+                  OnClick = lbnMClick
+                end
+              end
+            end
+          end
+        end
+        object pnlDay: TPanel
+          Align = Right
+          Locked = True
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 204.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 162.000000000000000000
+          Size.Height = 151.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'tooltippanel'
+          TabOrder = 0
+          object lblCalFlagNum: TLabel
+            Align = Top
+            StyledSettings = [Family]
+            Margins.Top = 5.000000000000000000
+            Position.Y = 86.000000000000000000
+            Size.Width = 162.000000000000000000
+            Size.Height = 39.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 40.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claMaroon
+            TextSettings.HorzAlign = Center
+            TextSettings.VertAlign = Trailing
+            TextSettings.WordWrap = False
+            Text = '12'
+          end
+          object lblCalFlagDay: TLabel
+            Align = Top
+            StyledSettings = [Family]
+            Margins.Top = 20.000000000000000000
+            Position.Y = 20.000000000000000000
+            Size.Width = 162.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claMidnightblue
+            TextSettings.HorzAlign = Center
+            Text = 'WEDNESDAY'
+          end
+          object lblCalFlagMth: TLabel
+            Align = Top
+            StyledSettings = [Family]
+            Margins.Top = 5.000000000000000000
+            Position.Y = 55.000000000000000000
+            Size.Width = 162.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claMaroon
+            TextSettings.HorzAlign = Center
+            TextSettings.VertAlign = Leading
+            Text = 'MARCH'
+          end
+          object lblCalFlagYear: TLabel
+            Align = Top
+            StyledSettings = [Family]
+            HitTest = True
+            Margins.Top = 5.000000000000000000
+            Position.Y = 113.000000000000000000
+            Size.Width = 162.000000000000000000
+            Size.Height = 37.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 36.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claMidnightblue
+            TextSettings.HorzAlign = Center
+            TextSettings.VertAlign = Trailing
+            Text = '2017'
+            Visible = False
+          end
+        end
+      end
+      object StatusBar1: TStatusBar
+        Position.Y = 721.000000000000000000
+        ShowSizeGrip = True
+        Size.Width = 376.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object btnDayTextSave: TButton
+          Align = Right
+          Position.X = 276.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Save'
+          OnClick = btnDayTextSaveClick
+        end
+      end
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        StyledSettings = [Family, Style, FontColor]
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.WordWrap = True
+        Align = Client
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Size.Width = 370.000000000000000000
+        Size.Height = 554.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 366.000000000000000000
+        Viewport.Height = 550.000000000000000000
+      end
+    end
+    object tsBookP2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 93.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemcontacts'
+      TabOrder = 0
+      Text = 'Timer'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object tbHead: TLabel
+        Align = MostTop
+        StyledSettings = [Family]
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 376.000000000000000000
+        Size.Height = 59.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 30.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claNavy
+        TextSettings.HorzAlign = Center
+        Text = 'STUDY TIME'
+        TabOrder = 1
+      end
+      object btnMatrix: TPanel
+        Align = Top
+        Position.Y = 64.000000000000000000
+        Size.Width = 376.000000000000000000
+        Size.Height = 269.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object gpTimerSet: TGridPanelLayout
+          Align = Top
+          Size.Width = 376.000000000000000000
+          Size.Height = 257.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          ColumnCollection = <
+            item
+              Value = 34.467926601209470000
+            end
+            item
+              Value = 33.570639351744180000
+            end
+            item
+              Value = 31.961434047046350000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = tb180
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = tb150
+              Row = 0
+            end
+            item
+              Column = 2
+              Control = tb120
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = tb90
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = tb75
+              Row = 1
+            end
+            item
+              Column = 2
+              Control = tb60
+              Row = 1
+            end
+            item
+              Column = 0
+              Control = tb45
+              Row = 2
+            end
+            item
+              Column = 1
+              Control = tb30
+              Row = 2
+            end
+            item
+              Column = 2
+              Control = tb25
+              Row = 2
+            end
+            item
+              Column = 0
+              Control = tb20
+              Row = 3
+            end
+            item
+              Column = 1
+              Control = tb15
+              Row = 3
+            end
+            item
+              Column = 2
+              Control = tb10
+              Row = 3
+            end
+            item
+              Column = 0
+              Control = tb05
+              Row = 4
+            end
+            item
+              Column = 1
+              Control = tb03
+              Row = 4
+            end
+            item
+              Column = 2
+              Control = tb01
+              Row = 4
+            end
+            item
+              Column = 2
+              Control = tb10s
+              Row = 5
+            end
+            item
+              Column = 1
+              Control = tb20s
+              Row = 5
+            end
+            item
+              Column = 0
+              Control = tb30s
+              Row = 5
+            end>
+          RowCollection = <
+            item
+              SizeStyle = Absolute
+              Value = 42.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 42.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 42.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 42.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 42.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 42.000000000000000000
+            end>
+          object tb180: TButton
+            Align = Client
+            Anchors = []
+            StyledSettings = [Family]
+            Size.Width = 129.599411010742200000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 21
+            Text = '3 Hrs'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claRed
+            OnClick = tb180Click
+          end
+          object tb150: TButton
+            Align = Client
+            Anchors = []
+            StyledSettings = [Family]
+            Size.Width = 126.225601196289100000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 20
+            Text = '2.5 Hrs'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claRed
+            OnClick = tb150Click
+          end
+          object tb120: TButton
+            Align = Client
+            Anchors = []
+            StyledSettings = [Family]
+            Size.Width = 120.174987792968800000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 18
+            Text = '2 Hrs'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claRed
+            OnClick = tb120Click
+          end
+          object tb90: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 129.599411010742200000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 19
+            Text = '90 Min'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claOrange
+            OnClick = tb90Click
+          end
+          object tb75: TButton
+            Align = Client
+            Anchors = []
+            StyledSettings = [Family]
+            Size.Width = 126.225601196289100000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 17
+            Text = '75 Min'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claOrange
+            OnClick = tb75Click
+          end
+          object tb60: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 120.174987792968800000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 12
+            Text = '60 Min'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claOrange
+            OnClick = tb60Click
+          end
+          object tb45: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 129.599411010742200000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 7
+            Text = '45 Min'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claYellow
+            OnClick = tb45Click
+          end
+          object tb30: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 126.225601196289100000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 15
+            Text = '30 Min'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claYellow
+            OnClick = tb30Click
+          end
+          object tb25: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 120.174987792968800000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 16
+            Text = '25 Min'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claYellow
+            OnClick = tb25Click
+          end
+          object tb20: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 129.599411010742200000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 14
+            Text = '20 Min'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claRoyalblue
+            OnClick = tb20Click
+          end
+          object tb15: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 126.225601196289100000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Text = '15 Min'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claRoyalblue
+            OnClick = tb15Click
+          end
+          object tb10: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 120.174987792968800000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 10
+            Text = '10 Min'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claRoyalblue
+            OnClick = tb10Click
+          end
+          object tb05: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 129.599411010742200000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 9
+            Text = '5 Min'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claPurple
+            OnClick = tb05Click
+          end
+          object tb03: TButton
+            Align = Client
+            Anchors = []
+            StyledSettings = [Family]
+            Size.Width = 126.225601196289100000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 13
+            Text = '3 Min'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claPurple
+            OnClick = tb03Click
+          end
+          object tb01: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 120.174987792968800000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 6
+            Text = '1 Min'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claPurple
+            OnClick = tb01Click
+          end
+          object tb10s: TButton
+            Align = Client
+            Anchors = []
+            StyledSettings = [Family]
+            Size.Width = 120.174987792968800000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 8
+            Text = '10 Secs'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claIndigo
+            OnClick = tb10sClick
+          end
+          object tb20s: TButton
+            Align = Client
+            Anchors = []
+            StyledSettings = [Family]
+            Size.Width = 126.225601196289100000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 11
+            Text = '20 Secs'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claIndigo
+            OnClick = tb20sClick
+          end
+          object tb30s: TButton
+            Align = Client
+            Anchors = []
+            StyledSettings = [Family]
+            Size.Width = 129.599411010742200000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            Text = '30 Secs'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            TintColor = claIndigo
+            OnClick = tb30sClick
+          end
+        end
+      end
+      object tmr_go: TButton
+        Align = Top
+        Enabled = False
+        StyledSettings = [Family]
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 353.000000000000000000
+        Size.Width = 356.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = '- SELECT LENGTH -'
+        TextSettings.Font.Size = 30.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claRed
+        OnClick = tmr_goClick
+      end
+      object tbTime: TLabel
+        Align = Top
+        StyledSettings = [Family, FontColor]
+        Margins.Bottom = 5.000000000000000000
+        Position.Y = 404.000000000000000000
+        Size.Width = 376.000000000000000000
+        Size.Height = 116.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 36.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Center
+        TabOrder = 0
+      end
+    end
+    object tsBookP1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 93.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemtoprated'
+      TabOrder = 0
+      Text = 'Project'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object tcProj: TTabControl
+        Align = Client
+        Size.Width = 376.000000000000000000
+        Size.Height = 751.000000000000000000
+        Size.PlatformDefault = False
+        TabHeight = 49.000000000000000000
+        TabIndex = 1
+        TabOrder = 33
+        TabPosition = PlatformDefault
+        Sizes = (
+          376s
+          702s
+          376s
+          702s
+          376s
+          702s
+          376s
+          702s
+          376s
+          702s)
+        object tsOProj: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 74.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Project'
+          ExplicitSize.cx = 75.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          object pnlPIView: TPanel
+            Align = MostTop
+            Size.Width = 376.000000000000000000
+            Size.Height = 185.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object ebProject: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 1
+              TextSettings.HorzAlign = Center
+              Position.X = 5.000000000000000000
+              Position.Y = 32.000000000000000000
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Project'
+            end
+            object ebModule: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 2
+              TextSettings.HorzAlign = Center
+              Position.X = 5.000000000000000000
+              Position.Y = 64.000000000000000000
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Module'
+            end
+            object ebSubject: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 3
+              TextSettings.HorzAlign = Center
+              Position.X = 5.000000000000000000
+              Position.Y = 96.000000000000000000
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Subject'
+            end
+            object Panel13: TPanel
+              Align = Top
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 128.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 39.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 37
+              object bPISave: TButton
+                Align = Right
+                Margins.Left = 3.000000000000000000
+                Margins.Top = 3.000000000000000000
+                Margins.Right = 3.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Position.X = 317.000000000000000000
+                Position.Y = 3.000000000000000000
+                Size.Width = 46.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Save'
+                OnClick = bPISaveClick
+              end
+              object bPIDel: TButton
+                Align = Left
+                StyledSettings = [Family, Size]
+                Margins.Left = 3.000000000000000000
+                Margins.Top = 3.000000000000000000
+                Margins.Right = 3.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Position.X = 95.000000000000000000
+                Position.Y = 3.000000000000000000
+                Size.Width = 15.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = '-'
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claRed
+                OnClick = bPIDelClick
+              end
+              object bPIFirst: TButton
+                Align = Left
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 3.000000000000000000
+                Margins.Top = 3.000000000000000000
+                Margins.Right = 3.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Position.X = 3.000000000000000000
+                Position.Y = 3.000000000000000000
+                Size.Width = 40.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 5
+                Text = '<<'
+                OnClick = bPIFirstClick
+              end
+              object bPILast: TButton
+                Align = Left
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 3.000000000000000000
+                Margins.Top = 3.000000000000000000
+                Margins.Right = 3.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Position.X = 162.000000000000000000
+                Position.Y = 3.000000000000000000
+                Size.Width = 40.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 4
+                Text = '>>'
+                OnClick = bPILastClick
+              end
+              object bPINext: TButton
+                Align = Left
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 3.000000000000000000
+                Margins.Top = 3.000000000000000000
+                Margins.Right = 3.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Position.X = 116.000000000000000000
+                Position.Y = 3.000000000000000000
+                Size.Width = 40.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Text = '>'
+                OnClick = bPINextClick
+              end
+              object bPIPrev: TButton
+                Align = Left
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 3.000000000000000000
+                Margins.Top = 3.000000000000000000
+                Margins.Right = 3.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Position.X = 49.000000000000000000
+                Position.Y = 3.000000000000000000
+                Size.Width = 40.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                Text = '<'
+                OnClick = bPIPrevClick
+              end
+              object lblPICount: TLabel
+                Align = Client
+                StyledSettings = [Family]
+                Margins.Left = 3.000000000000000000
+                Margins.Right = 3.000000000000000000
+                Size.Width = 103.000000000000000000
+                Size.Height = 39.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 10.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claRed
+                TextSettings.HorzAlign = Center
+                Text = 'lblPICount'
+                TabOrder = 6
+              end
+            end
+            object lbPIHead: TLabel
+              Align = MostTop
+              StyledSettings = [Family]
+              Margins.Top = 10.000000000000000000
+              Position.Y = 10.000000000000000000
+              Size.Width = 376.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claBlue
+              TextSettings.HorzAlign = Center
+              Text = 'Project Index Card'
+              TabOrder = 47
+            end
+          end
+        end
+        object tsCIView: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = True
+          Size.Width = 74.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Biblio'
+          ExplicitSize.cx = 125.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          object pnlPICIOverview: TPanel
+            Align = Client
+            Size.Width = 376.000000000000000000
+            Size.Height = 702.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 26
+            object pnlCRQuote: TPanel
+              Align = Client
+              Size.Width = 376.000000000000000000
+              Size.Height = 411.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 31
+              object lblQuoteHead: TLabel
+                Align = Top
+                StyledSettings = [Family]
+                HitTest = True
+                Margins.Top = 10.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 376.000000000000000000
+                Size.Height = 23.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claBlue
+                TextSettings.HorzAlign = Center
+                Text = 'Text to Quote'
+                TabOrder = 0
+              end
+              object mCRQuote: TMemo
+                Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+                DataDetectorTypes = []
+                StyledSettings = [Family, Style, FontColor]
+                TextSettings.Font.Size = 10.000000000000000000
+                TextSettings.WordWrap = True
+                Align = Client
+                Margins.Left = 10.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 363.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Viewport.Width = 352.000000000000000000
+                Viewport.Height = 359.000000000000000000
+              end
+            end
+            object pnlCIRef: TPanel
+              Align = Top
+              Size.Width = 376.000000000000000000
+              Size.Height = 257.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 33
+              object lbCIHeader: TLabel
+                Align = Top
+                StyledSettings = [Family]
+                Margins.Top = 5.000000000000000000
+                Position.Y = 5.000000000000000000
+                Size.Width = 376.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claBlue
+                TextSettings.HorzAlign = Center
+                Text = 'OU Harvard - Bibliography/Citation'
+                TabOrder = 42
+              end
+              object mCILong: TMemo
+                Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+                DataDetectorTypes = []
+                StyledSettings = [Family, Style, FontColor]
+                TextSettings.Font.Size = 10.000000000000000000
+                TextSettings.WordWrap = True
+                Align = Bottom
+                Margins.Left = 10.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                Position.X = 10.000000000000000000
+                Position.Y = 128.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 70.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 44
+                Viewport.Width = 352.000000000000000000
+                Viewport.Height = 66.000000000000000000
+              end
+              object cbBibliogOnly: TCheckBox
+                Align = Bottom
+                Margins.Left = 10.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 10.000000000000000000
+                Position.Y = 103.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 36
+                Text = 'Bibliography Section Only'
+                TextSettings.HorzAlign = Center
+              end
+              object CIR_ILR1: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Bottom
+                TabOrder = 50
+                TextSettings.Font.Size = 10.000000000000000000
+                TextSettings.HorzAlign = Center
+                Position.X = 10.000000000000000000
+                Position.Y = 65.000000000000000000
+                Margins.Left = 10.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Style, FontColor]
+              end
+              object lbCI1: TLabel
+                Align = Bottom
+                Margins.Left = 10.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Position.X = 10.000000000000000000
+                Position.Y = 41.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 23.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                Text = 'Inline Reference #1'
+                TabOrder = 49
+              end
+              object Panel3: TPanel
+                Align = MostBottom
+                Margins.Left = 3.000000000000000000
+                Margins.Right = 3.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                Position.X = 3.000000000000000000
+                Position.Y = 208.000000000000000000
+                Size.Width = 370.000000000000000000
+                Size.Height = 39.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 35
+                object bCISave: TButton
+                  Align = Right
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Position.X = 321.000000000000000000
+                  Position.Y = 3.000000000000000000
+                  Size.Width = 46.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  Text = 'Save'
+                  OnClick = bCISaveClick
+                end
+                object bCIDel: TButton
+                  Align = Left
+                  StyledSettings = [Family, Size]
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Position.X = 95.000000000000000000
+                  Position.Y = 3.000000000000000000
+                  Size.Width = 15.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 2
+                  Text = '-'
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claRed
+                  OnClick = bCIDelClick
+                end
+                object bCIFirst: TButton
+                  Align = Left
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Position.X = 3.000000000000000000
+                  Position.Y = 3.000000000000000000
+                  Size.Width = 40.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 6
+                  Text = '<<'
+                  OnClick = bCIFirstClick
+                end
+                object bCILast: TButton
+                  Align = Left
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Position.X = 162.000000000000000000
+                  Position.Y = 3.000000000000000000
+                  Size.Width = 40.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 5
+                  Text = '>>'
+                  OnClick = bCILastClick
+                end
+                object bCINext: TButton
+                  Align = Left
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Position.X = 116.000000000000000000
+                  Position.Y = 3.000000000000000000
+                  Size.Width = 40.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 4
+                  Text = '>'
+                  OnClick = bCINextClick
+                end
+                object bCIPrev: TButton
+                  Align = Left
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Position.X = 49.000000000000000000
+                  Position.Y = 3.000000000000000000
+                  Size.Width = 40.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 3
+                  Text = '<'
+                  OnClick = bCIPrevClick
+                end
+                object lbCICount: TLabel
+                  Align = Client
+                  StyledSettings = [Family]
+                  Margins.Left = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Size.Width = 56.000000000000000000
+                  Size.Height = 39.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Size = 10.000000000000000000
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claRed
+                  TextSettings.HorzAlign = Center
+                  Text = 'lbCICount'
+                  TabOrder = 7
+                end
+                object bCINew: TButton
+                  Align = Right
+                  StyledSettings = [Family, Size, Style]
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Position.X = 270.000000000000000000
+                  Position.Y = 3.000000000000000000
+                  Size.Width = 45.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 1
+                  Text = 'NEW'
+                  TextSettings.FontColor = claDarkred
+                  OnClick = bCINewClick
+                end
+              end
+            end
+            object bCIOutput: TButton
+              Align = MostBottom
+              StyledSettings = [Family, Size]
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 668.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 29.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 47
+              Text = 'Extract to txt'
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claDarkred
+              OnClick = bCIOutputClick
+            end
+          end
+        end
+        object Outliner: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 74.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'tabitemmostrecent'
+          TabOrder = 0
+          Text = 'Outline'
+          ExplicitSize.cx = 50.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          object Panel1: TPanel
+            Align = Client
+            Size.Width = 376.000000000000000000
+            Size.Height = 702.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object myTV: TTreeView
+              Align = MostTop
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 42.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 150.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Viewport.Width = 362.000000000000000000
+              Viewport.Height = 146.000000000000000000
+            end
+            object Panel4: TPanel
+              Align = Client
+              Size.Width = 376.000000000000000000
+              Size.Height = 361.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object mShow: TMemo
+                Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+                DataDetectorTypes = []
+                StyledSettings = [Family, Style, FontColor]
+                TextSettings.Font.Size = 10.000000000000000000
+                Align = Client
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 366.000000000000000000
+                Size.Height = 356.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Viewport.Width = 362.000000000000000000
+                Viewport.Height = 352.000000000000000000
+              end
+            end
+            object Panel5: TPanel
+              Align = Top
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 192.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 149.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              object GridPanelLayout2: TGridPanelLayout
+                Align = Bottom
+                Position.Y = 122.000000000000000000
+                Size.Width = 366.000000000000000000
+                Size.Height = 27.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                ColumnCollection = <
+                  item
+                    Value = 27.255184512048180000
+                  end
+                  item
+                    Value = 25.492086592338580000
+                  end
+                  item
+                    Value = 24.175733994302610000
+                  end
+                  item
+                    Value = 23.076994901310630000
+                  end>
+                ControlCollection = <
+                  item
+                    Column = 0
+                    Control = btLoad
+                    Row = 0
+                  end
+                  item
+                    Column = 3
+                    Control = btSave
+                    Row = 0
+                  end
+                  item
+                    Column = 2
+                    Control = btOutp
+                    Row = 0
+                  end
+                  item
+                    Column = 1
+                    Control = btNew
+                    Row = 0
+                  end>
+                RowCollection = <
+                  item
+                    Value = 100.000000000000000000
+                  end>
+                object btLoad: TButton
+                  Align = Client
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 89.753974914550780000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 5
+                  Text = 'Load'
+                  OnClick = btLoadClick
+                end
+                object btSave: TButton
+                  Align = Client
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 74.461791992187500000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 4
+                  Text = 'Save'
+                  OnClick = btSaveClick
+                end
+                object btOutp: TButton
+                  Align = Client
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 78.483184814453130000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 3
+                  Text = 'Output'
+                  OnClick = btOutpClick
+                end
+                object btNew: TButton
+                  Align = Client
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 83.301048278808590000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 7
+                  Text = 'New'
+                  OnClick = btNewClick
+                end
+              end
+              object eNodeLabel: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 0
+                Position.Y = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 366.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Node Name'
+              end
+              object gpNode: TGridPanelLayout
+                Align = Client
+                Size.Width = 366.000000000000000000
+                Size.Height = 80.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                ColumnCollection = <
+                  item
+                    Value = 50.000000000000000000
+                  end
+                  item
+                    Value = 50.000000000000000000
+                  end>
+                ControlCollection = <
+                  item
+                    Column = 0
+                    Control = btnAddNode
+                    Row = 0
+                  end
+                  item
+                    Column = 1
+                    Control = btnDelNode
+                    Row = 0
+                  end
+                  item
+                    Column = 0
+                    Control = btnAddSubNode
+                    Row = 1
+                  end
+                  item
+                    Column = 1
+                    Control = btnMoveNode
+                    Row = 1
+                  end
+                  item
+                    Column = 1
+                    Control = btnMoveNodetoRoot
+                    Row = 2
+                  end
+                  item
+                    Column = 0
+                    Control = btnStorySaveFront
+                    Row = 2
+                  end>
+                RowCollection = <
+                  item
+                    SizeStyle = Absolute
+                    Value = 28.000000000000000000
+                  end
+                  item
+                    SizeStyle = Absolute
+                    Value = 28.000000000000000000
+                  end
+                  item
+                    SizeStyle = Absolute
+                    Value = 28.000000000000000000
+                  end>
+                object btnAddNode: TButton
+                  Align = Client
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 173.000000000000000000
+                  Size.Height = 18.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 8
+                  Text = 'Add ^Root Node'
+                  OnClick = btnAddNodeClick
+                end
+                object btnDelNode: TButton
+                  Align = Client
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 173.000000000000000000
+                  Size.Height = 18.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 5
+                  Text = 'Delete Selected Node'
+                  OnClick = btnDelNodeClick
+                end
+                object btnAddSubNode: TButton
+                  Align = Client
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 173.000000000000000000
+                  Size.Height = 18.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 7
+                  Text = 'Add >SubNode'
+                  OnClick = btnAddSubNodeClick
+                end
+                object btnMoveNode: TButton
+                  Align = Client
+                  Anchors = []
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 173.000000000000000000
+                  Size.Height = 18.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 4
+                  Text = 'Move Selected Node'
+                  OnClick = btnMoveNodeClick
+                end
+                object btnMoveNodetoRoot: TButton
+                  Align = Client
+                  Anchors = []
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 173.000000000000000000
+                  Size.Height = 18.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 3
+                  Text = 'Move to ^Root'
+                  OnClick = btnMoveNodetoRootClick
+                end
+                object btnStorySaveFront: TButton
+                  Align = Client
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 173.000000000000000000
+                  Size.Height = 18.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 6
+                  Text = 'Save Outline'
+                  OnClick = btnStorySaveFrontClick
+                end
+              end
+            end
+            object eOutlineTitle: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = MostTop
+              TabOrder = 1
+              Position.X = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Title'
+            end
+          end
+        end
+        object tsCRChooseType: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 74.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'CIR Type'
+          ExplicitSize.cx = 125.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          object pnlCIChooseType: TPanel
+            Align = Client
+            Size.Width = 376.000000000000000000
+            Size.Height = 702.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 7
+            object Apply: TButton
+              Align = MostBottom
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 10.000000000000000000
+              Position.Y = 661.000000000000000000
+              Size.Width = 356.000000000000000000
+              Size.Height = 36.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 36
+              Text = 'Load Requirements'
+              OnClick = ApplyClick
+            end
+            object tcCiteType: TTabControl
+              Align = Client
+              Size.Width = 376.000000000000000000
+              Size.Height = 656.000000000000000000
+              Size.PlatformDefault = False
+              TabHeight = 49.000000000000000000
+              TabIndex = 2
+              TabOrder = 32
+              TabPosition = PlatformDefault
+              Sizes = (
+                376s
+                607s
+                376s
+                607s
+                376s
+                607s)
+              object tsBookJournal: TTabItem
+                CustomIcon = <
+                  item
+                  end>
+                IsSelected = False
+                Size.Width = 124.000000000000000000
+                Size.Height = 49.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = ''
+                TabOrder = 0
+                Text = 'Books/Journal'
+                ExplicitSize.cx = 95.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+                object GroupBox1: TGroupBox
+                  Align = Client
+                  Margins.Left = 10.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Margins.Bottom = 10.000000000000000000
+                  Size.Width = 356.000000000000000000
+                  Size.Height = 592.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = 'Type'
+                  TabOrder = 0
+                  object rgBookAuth: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 20.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 14
+                    Text = 'Book/Ebook (Auth)'
+                  end
+                  object rgBookOrgAuth: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 62.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 13
+                    Text = 'Book (Org Auth)'
+                  end
+                  object rgBookReprint: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 83.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 12
+                    Text = 'Book (Reprint)'
+                  end
+                  object rgBookNoAuth: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 41.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 9
+                    Text = 'Book (No Auth)'
+                  end
+                  object rgBookFacsimile: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 104.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 6
+                    Text = 'Book (Facsimile)'
+                  end
+                  object rgBookChap: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 125.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 11
+                    Text = 'Book (Chapter of)'
+                  end
+                  object rgBookCollected: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 186.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 8
+                    Text = 'Collected/Multi-Vol  Works'
+                  end
+                  object rgAnthology: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 226.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 3
+                    Text = 'Anthology/Poem'
+                  end
+                  object rgAnthologyLine: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 247.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 7
+                    Text = 'Anthology/Poem (Line)'
+                  end
+                  object rgReference: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 287.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 5
+                    Text = 'Reference Book'
+                  end
+                  object rgBible: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 308.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 1
+                    Text = 'Bible'
+                  end
+                  object rgJournalArt: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 348.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 4
+                    Text = 'Journal (Article)'
+                  end
+                  object rgJournalWhole: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 369.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 2
+                    Text = 'Journal (Whole)'
+                  end
+                  object rgBookPartChap: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 146.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 10
+                    Text = 'Book (Part ofChapter)'
+                  end
+                end
+              end
+              object tsNewsMedia: TTabItem
+                CustomIcon = <
+                  item
+                  end>
+                IsSelected = False
+                Size.Width = 124.000000000000000000
+                Size.Height = 49.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = ''
+                TabOrder = 0
+                Text = 'News/Media'
+                ExplicitSize.cx = 87.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+                object GroupBox2: TGroupBox
+                  Align = Client
+                  Margins.Left = 10.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 356.000000000000000000
+                  Size.Height = 597.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = 'Type'
+                  TabOrder = 0
+                  object rgWebAuth: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 81.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 11
+                    Text = 'Web (Author)'
+                  end
+                  object rgWebNoAuth: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 102.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 10
+                    Text = 'Web (No Authors)'
+                  end
+                  object rgWebOrg: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 123.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 4
+                    Text = 'Web (Org)'
+                  end
+                  object rgMovies: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 346.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 3
+                    Text = 'Movies'
+                  end
+                  object rgPodcast: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 245.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 2
+                    Text = 'Podcast'
+                  end
+                  object rgRadio: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 224.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 9
+                    Text = 'Radio'
+                  end
+                  object rgSocialMedia: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 184.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 8
+                    Text = 'Social Media'
+                  end
+                  object rgTVEpisodeSeries: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 285.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 1
+                    Text = 'TV (Episode/Series)'
+                  end
+                  object rgTVSingle: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 306.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 7
+                    Text = 'TV (Single Program)'
+                  end
+                  object rgNewsByline: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 20.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 20
+                    Text = 'News Art (byline)'
+                  end
+                  object rgNewsNoByline: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 41.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 19
+                    Text = 'News Art (no byline)'
+                  end
+                  object rgWebMagNoPrint: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 144.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 14
+                    Text = 'Web (Magazine no print version)'
+                  end
+                end
+              end
+              object tsVLE: TTabItem
+                CustomIcon = <
+                  item
+                  end>
+                IsSelected = True
+                Size.Width = 126.000000000000000000
+                Size.Height = 49.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = ''
+                TabOrder = 0
+                Text = 'VLE/Misc'
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+                object GroupBox3: TGroupBox
+                  Align = Client
+                  Margins.Left = 10.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 356.000000000000000000
+                  Size.Height = 597.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = 'Type'
+                  TabOrder = 0
+                  object rgConfPaper: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 20.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 4
+                    Text = 'Conference Paper'
+                  end
+                  object rgVLELectureNotes: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 60.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 3
+                    Text = 'VLE Lecture Notes'
+                  end
+                  object rgVLEModule: TRadioButton
+                    Align = Top
+                    Enabled = False
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 81.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 10
+                    Text = 'VLE Module Book'
+                  end
+                  object rgVLETutorHandout: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 102.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 2
+                    Text = 'VLE Tutor Handout'
+                  end
+                  object rgPainting: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 142.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 12
+                    Text = 'Painting/Drawing'
+                  end
+                  object rgPhotographicPrint: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 163.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 16
+                    Text = 'Photographic Print'
+                  end
+                  object rgPhotographWeb: TRadioButton
+                    Align = Top
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 1.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 1.000000000000000000
+                    Position.X = 20.000000000000000000
+                    Position.Y = 184.000000000000000000
+                    Size.Width = 331.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 15
+                    Text = 'Photograph (WWW)'
+                  end
+                end
+              end
+            end
+          end
+        end
+        object tsCREntry: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 78.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'CIR Entry'
+          ExplicitSize.cx = 127.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          object pnlCREntry: TPanel
+            Align = Client
+            Size.Width = 376.000000000000000000
+            Size.Height = 702.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 8
+            object pnlCROptions: TPanel
+              Align = Top
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 564.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object lblCRHead: TLabel
+                Align = MostTop
+                StyledSettings = [Family]
+                Margins.Top = 5.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                Position.Y = 5.000000000000000000
+                Size.Width = 366.000000000000000000
+                Size.Height = 23.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claBlue
+                TextSettings.HorzAlign = Center
+                Text = 'Citation Requirement/Options'
+                TabOrder = 36
+              end
+              object eb01: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 38
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 43.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Size, Style]
+              end
+              object eb02: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 39
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 75.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Size, Style]
+              end
+              object eb03: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 40
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 107.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+              end
+              object eb04: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 41
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 139.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Size, Style]
+              end
+              object eb08: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 45
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 267.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Size, Style]
+              end
+              object eb09: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 46
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 299.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Size, Style]
+              end
+              object eb10: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 47
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 331.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Size, Style]
+              end
+              object eb11: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 48
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 363.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Size, Style]
+              end
+              object EBOL02: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 50
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 460.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = '(Created/Updated)'
+              end
+              object eb06: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 43
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 203.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Size, Style]
+              end
+              object eb05: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 42
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 171.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Size, Style]
+              end
+              object eb07: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 44
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 235.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+              end
+              object EBOL01: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 49
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 428.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = '(DOI/URL)'
+              end
+              object EBOL03: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Top
+                TabOrder = 51
+                TextSettings.HorzAlign = Center
+                Position.X = 5.000000000000000000
+                Position.Y = 492.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = '(Accessed)'
+              end
+              object bCRAccessed: TButton
+                Align = Top
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 525.000000000000000000
+                Size.Width = 356.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 52
+                Text = 'Set Accessed to Today'
+                OnClick = bCRAccessedClick
+              end
+              object lblCROnline: TLabel
+                Align = Top
+                Margins.Top = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.Y = 400.000000000000000000
+                Size.Width = 366.000000000000000000
+                Size.Height = 23.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                Text = 'Online'
+                TabOrder = 37
+              end
+            end
+            object bCRMake: TButton
+              Align = MostBottom
+              StyledSettings = [Family, Size]
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 15.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 663.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 34.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 47
+              Text = 'Make Citation'
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claDarkred
+              OnClick = bCRMakeClick
+            end
+            object bCRReset: TButton
+              Align = Bottom
+              StyledSettings = [Family, Size]
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 10.000000000000000000
+              Position.Y = 610.000000000000000000
+              Size.Width = 356.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'Reset all'
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claBlueviolet
+              OnClick = bCRResetClick
+            end
+          end
+        end
+      end
+    end
+    object tsConfig: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 95.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Config'
+      ExplicitSize.cx = 94.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Panel2: TPanel
+        Align = Top
+        Position.Y = 576.000000000000000000
+        Size.Width = 376.000000000000000000
+        Size.Height = 87.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object btnDBBackup: TButton
+          Align = Left
+          StyledSettings = [Family, FontColor]
+          Margins.Left = 6.000000000000000000
+          Margins.Top = 6.000000000000000000
+          Margins.Right = 6.000000000000000000
+          Margins.Bottom = 6.000000000000000000
+          Position.X = 6.000000000000000000
+          Position.Y = 50.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Backup'
+          TextSettings.Font.Size = 10.000000000000000000
+          TintColor = claLawngreen
+          OnClick = btnDBBackupClick
+        end
+        object btnDBRestore: TButton
+          Align = Right
+          StyledSettings = [Family, FontColor]
+          Margins.Left = 6.000000000000000000
+          Margins.Top = 6.000000000000000000
+          Margins.Right = 6.000000000000000000
+          Margins.Bottom = 6.000000000000000000
+          Position.X = 225.000000000000000000
+          Position.Y = 50.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Restore'
+          TextSettings.Font.Size = 10.000000000000000000
+          TintColor = claLightcoral
+          OnClick = btnDBRestoreClick
+        end
+        object Label1: TLabel
+          Align = MostTop
+          StyledSettings = [Family, FontColor]
+          Size.Width = 376.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Backup/Restore Database'
+          TabOrder = 4
+        end
+        object Label14: TLabel
+          Align = MostTop
+          StyledSettings = [Family, FontColor]
+          Margins.Bottom = 10.000000000000000000
+          Position.Y = 17.000000000000000000
+          Size.Width = 376.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Database Management'
+          TabOrder = 1
+        end
+      end
+      object Panel6: TPanel
+        Align = Top
+        Position.Y = 114.000000000000000000
+        Size.Width = 376.000000000000000000
+        Size.Height = 70.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        object TrackBar1: TTrackBar
+          Align = Center
+          CanParentFocus = True
+          Max = 300.000000000000000000
+          Min = 100.000000000000000000
+          Orientation = Horizontal
+          Size.Width = 200.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Value = 150.000000000000000000
+          OnChange = TrackBar1Change
+        end
+        object Label2: TLabel
+          Align = Right
+          Position.X = 327.000000000000000000
+          Position.Y = 26.000000000000000000
+          Size.Width = 49.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          Text = '150'
+          TabOrder = 1
+        end
+        object Label3: TLabel
+          Align = MostTop
+          StyledSettings = [Family, FontColor]
+          Size.Width = 376.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Outline Treeview Window  Size'
+          TabOrder = 2
+        end
+      end
+      object Panel7: TPanel
+        Align = Top
+        Position.Y = 60.000000000000000000
+        Size.Width = 376.000000000000000000
+        Size.Height = 54.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object Label4: TLabel
+          Align = MostTop
+          StyledSettings = [Family, FontColor]
+          Margins.Top = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 376.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Autosave Journal (3 mins)'
+          TabOrder = 1
+        end
+        object OutMemAutoSave: TSwitch
+          IsChecked = True
+          Position.X = 149.000000000000000000
+          Position.Y = 23.000000000000000000
+          TabOrder = 2
+        end
+        object Label6: TLabel
+          Position.X = 107.000000000000000000
+          Position.Y = 30.000000000000000000
+          Size.Width = 34.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Trailing
+          Text = 'OFF'
+          TabOrder = 4
+        end
+        object Label7: TLabel
+          Position.X = 233.000000000000000000
+          Position.Y = 29.000000000000000000
+          Size.Width = 41.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'ON'
+          TabOrder = 3
+        end
+      end
+      object Panel8: TPanel
+        Align = Top
+        Position.Y = 184.000000000000000000
+        Size.Width = 376.000000000000000000
+        Size.Height = 392.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Label5: TLabel
+          Align = MostTop
+          StyledSettings = [Family, FontColor]
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 376.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Log Following Actions to Journal'
+          TabOrder = 1
+        end
+        object Panel9: TPanel
+          Align = Top
+          Position.Y = 27.000000000000000000
+          Size.Width = 376.000000000000000000
+          Size.Height = 93.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label9: TLabel
+            Align = MostTop
+            StyledSettings = [Family, FontColor]
+            Margins.Top = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 376.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Text = 'Project'
+            TabOrder = 1
+          end
+          object GridPanelLayout1: TGridPanelLayout
+            Align = Top
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 20.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 336.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            ColumnCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                Control = cbCFGprCreate
+                Row = 0
+              end
+              item
+                Column = 1
+                Control = cbCFGprDelete
+                Row = 0
+              end
+              item
+                Column = 0
+                Control = cbCFGprChange
+                Row = 1
+              end>
+            RowCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                SizeStyle = Auto
+              end>
+            object cbCFGprCreate: TCheckBox
+              Align = Client
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Create'
+            end
+            object cbCFGprDelete: TCheckBox
+              Align = Client
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Delete'
+            end
+            object cbCFGprChange: TCheckBox
+              Align = Client
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Change'
+            end
+          end
+        end
+        object Panel10: TPanel
+          Align = Top
+          Position.Y = 120.000000000000000000
+          Size.Width = 376.000000000000000000
+          Size.Height = 93.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          object GridPanelLayout3: TGridPanelLayout
+            Align = Top
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 20.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 336.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            ColumnCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                Control = cbCFGtiStart
+                Row = 0
+              end
+              item
+                Column = 1
+                Control = cbCFGtiEnd
+                Row = 0
+              end
+              item
+                Column = 0
+                Control = cbCFGtiPause
+                Row = 1
+              end>
+            RowCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                SizeStyle = Auto
+              end>
+            object cbCFGtiStart: TCheckBox
+              Align = Client
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'Start'
+            end
+            object cbCFGtiEnd: TCheckBox
+              Align = Client
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Finish'
+            end
+            object cbCFGtiPause: TCheckBox
+              Align = Client
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Pause/Resume'
+            end
+          end
+          object Label10: TLabel
+            Align = MostTop
+            StyledSettings = [Family, FontColor]
+            Margins.Top = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 376.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Text = 'Timer'
+            TabOrder = 1
+          end
+        end
+        object Panel11: TPanel
+          Align = Top
+          Position.Y = 213.000000000000000000
+          Size.Width = 376.000000000000000000
+          Size.Height = 104.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object V: TGridPanelLayout
+            Align = Top
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 20.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 336.000000000000000000
+            Size.Height = 72.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            ColumnCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                Control = cbCFGouNewNode
+                Row = 0
+              end
+              item
+                Column = 1
+                Control = cbCFGouMovedNode
+                Row = 0
+              end
+              item
+                Column = 0
+                Control = cbCFGouNewSubNode
+                Row = 1
+              end
+              item
+                Column = 1
+                Control = cbCFGouDeletedNode
+                Row = 1
+              end
+              item
+                Column = 0
+                Control = cbCFGouExport
+                Row = 2
+              end
+              item
+                Column = 1
+                Control = cbCFGouHousekeep
+                Row = 2
+              end>
+            RowCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                SizeStyle = Auto
+              end>
+            object cbCFGouNewNode: TCheckBox
+              Align = Client
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 23.500000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              Text = 'New Node'
+            end
+            object cbCFGouMovedNode: TCheckBox
+              Align = Client
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 23.500000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'Moved Node'
+            end
+            object cbCFGouNewSubNode: TCheckBox
+              Align = Client
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 23.500000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'New Subnode'
+            end
+            object cbCFGouDeletedNode: TCheckBox
+              Align = Client
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 23.500000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Deleted Node'
+            end
+            object cbCFGouExport: TCheckBox
+              Align = Client
+              Anchors = []
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Export'
+            end
+            object cbCFGouHousekeep: TCheckBox
+              Align = Client
+              Anchors = []
+              Size.Width = 168.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Housekeeping'
+            end
+          end
+          object Label8: TLabel
+            Align = MostTop
+            StyledSettings = [Family, FontColor]
+            Margins.Top = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 376.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Text = 'Outline'
+            TabOrder = 2
+          end
+        end
+        object Panel12: TPanel
+          Align = Top
+          Position.Y = 317.000000000000000000
+          Size.Width = 376.000000000000000000
+          Size.Height = 93.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object GridPanelLayout5: TGridPanelLayout
+            Align = Top
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 20.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 336.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            ColumnCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                Control = cbCFGciCreate
+                Row = 0
+              end
+              item
+                Column = 1
+                Control = cbCFGciUpdates
+                Row = 0
+              end
+              item
+                Column = 0
+                Control = cbCFGciDeleted
+                Row = 1
+              end>
+            RowCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                SizeStyle = Auto
+              end>
+            object cbCFGciCreate: TCheckBox
+              Align = Client
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Created'
+            end
+            object cbCFGciUpdates: TCheckBox
+              Align = Client
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Changes'
+            end
+            object cbCFGciDeleted: TCheckBox
+              Align = Client
+              IsChecked = True
+              Size.Width = 168.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Deleted'
+            end
+          end
+          object Label11: TLabel
+            Align = MostTop
+            StyledSettings = [Family, FontColor]
+            Margins.Top = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 376.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Text = 'Citation'
+            TabOrder = 2
+          end
+        end
+      end
+      object Panel14: TPanel
+        Align = Top
+        Size.Width = 376.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Label12: TLabel
+          Align = MostTop
+          StyledSettings = [Family, FontColor]
+          HitTest = True
+          Margins.Top = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 376.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Font size'
+          TabOrder = 2
+          OnClick = Label12Click
+        end
+        object TrackBar2: TTrackBar
+          Align = Center
+          CanParentFocus = True
+          Max = 36.000000000000000000
+          Min = 8.000000000000000000
+          Orientation = Horizontal
+          Size.Width = 200.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Value = 10.000000000000000000
+          OnChange = TrackBar2Change
+        end
+        object Label13: TLabel
+          Align = Right
+          Position.X = 327.000000000000000000
+          Position.Y = 27.000000000000000000
+          Size.Width = 49.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          Text = '12'
+          TabOrder = 1
+        end
+      end
+    end
+  end
+  object GestMgr: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 155
+    Top = 150
+    GestureData = <
+      item
+        Control = Owner
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end>
+      end>
+  end
+  object DTA: TFDConnection
+    Params.Strings = (
+      
+        'Database=D:\Domisoft\Delphi 11.0 Academic\2022\cite-it-right-new' +
+        '\cite.sqlite'
+      'DriverID=SQLite'
+      'OpenMode=CreateUTF8')
+    LoginPrompt = False
+    AfterConnect = DTAAfterConnect
+    BeforeConnect = DTABeforeConnect
+    Left = 146
+    Top = 98
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 307
+    Top = 631
+  end
+  object FDT: TFDTransaction
+    Connection = DTA
+    Left = 256
+    Top = 98
+  end
+  object FDT2: TFDTransaction
+    Connection = DTA
+    Left = 336
+    Top = 98
+  end
+  object FDTU: TFDTransaction
+    Connection = DTA
+    Left = 296
+    Top = 98
+  end
+  object GO: TFDCommand
+    Connection = DTA
+    Transaction = FDT
+    Left = 11
+    Top = 150
+  end
+  object QCite: TFDQuery
+    AfterOpen = QCiteAfterOpen
+    AfterScroll = QCiteAfterScroll
+    Connection = DTA
+    Transaction = FDT
+    UpdateTransaction = FDTU
+    Left = 53
+    Top = 150
+  end
+  object TPrj: TFDTable
+    AutoCalcFields = False
+    AfterOpen = TPrjAfterOpen
+    BeforeScroll = TPrjBeforeScroll
+    AfterScroll = TPrjAfterScroll
+    IndexFieldNames = 'projid'
+    Connection = DTA
+    Transaction = FDT
+    UpdateTransaction = FDTU
+    TableName = 'project'
+    Left = 11
+    Top = 98
+    object TPrjprojid: TFDAutoIncField
+      FieldName = 'projid'
+      Origin = 'projid'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
+    end
+    object TPrjproj_name: TWideMemoField
+      FieldName = 'proj_name'
+      Origin = 'proj_name'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object TPrjproj_modl: TWideMemoField
+      FieldName = 'proj_modl'
+      Origin = 'proj_modl'
+      BlobType = ftWideMemo
+    end
+    object TPrjproj_subj: TWideMemoField
+      FieldName = 'proj_subj'
+      Origin = 'proj_subj'
+      BlobType = ftWideMemo
+    end
+    object TPrjproj_creat: TWideMemoField
+      FieldName = 'proj_creat'
+      Origin = 'proj_creat'
+      BlobType = ftWideMemo
+    end
+  end
+  object NotifyMe: TNotificationCenter
+    Left = 291
+    Top = 150
+  end
+  object QJnl: TFDQuery
+    Connection = DTA
+    Transaction = FDT
+    UpdateTransaction = FDTU
+    Left = 53
+    Top = 98
+  end
+  object BACKUP: TFDSQLiteBackup
+    DriverLink = FDPhysSQLiteDriverLink1
+    Catalog = 'MAIN'
+    DestCatalog = 'MAIN'
+    Left = 191
+    Top = 98
+  end
+  object QStry: TFDQuery
+    AfterOpen = QStryAfterOpen
+    Connection = DTA
+    Transaction = FDT
+    UpdateTransaction = FDTU
+    Left = 101
+    Top = 98
+  end
+  object QOutl: TFDQuery
+    AfterOpen = QOutlAfterOpen
+    Connection = DTA
+    Transaction = FDT
+    UpdateTransaction = FDTU
+    Left = 101
+    Top = 150
+  end
+end
